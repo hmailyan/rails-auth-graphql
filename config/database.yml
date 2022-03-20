@@ -23,7 +23,11 @@ default: &default
 
 development:
   <<: *default
-  database: devise_development
+  username: postgres
+  password: password
+  port: 5432
+  host: localhost
+  database: jwt
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: devise_production
-  username: devise
+  database: jwt
+  username: postgres
   password: <%= ENV["DEVISE_DATABASE_PASSWORD"] %>
