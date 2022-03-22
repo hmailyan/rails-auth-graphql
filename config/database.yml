@@ -23,11 +23,11 @@ default: &default
 
 development:
   <<: *default
-  username: postgres
-  password: password
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   port: 5432
-  host: localhost
-  database: jwt
+  host: <%= ENV["DB_HOST"] %>
+  database: <%= ENV["DB_NAME"] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: jwt
-  username: postgres
-  password: <%= ENV["DEVISE_DATABASE_PASSWORD"] %>
+  database: <%= ENV["DB_NAME"] %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>

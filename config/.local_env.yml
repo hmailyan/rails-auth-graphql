@@ -1,0 +1,5 @@
+DB_NAME: "database"
+DB_USERNAME: "username"
+DB_PASSWORD: "password"
+DB_PORT: PORT
+DB_HOST: localhost

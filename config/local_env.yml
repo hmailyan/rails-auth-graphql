@@ -1,0 +1,5 @@
+  DB_NAME: "jwt"
+  DB_USERNAME: "postgres"
+  DB_PASSWORD: "password"
+  DB_HOST: localhost
+  JWT: "9c96c2aeed21fa72c117be16940c1718a2eda5dcc26c25c0524a0b0faa76bbf3da79fa2b0f0ac77416ee412d254baa2efd6916502cc9b211574d56d9c7ba2e84"
